@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F724EACD22FC77240008E10B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724EACC22FC77240008E10B /* main.swift */; };
+		F724EAD522FC774E0008E10B /* SPMUtility in Frameworks */ = {isa = PBXBuildFile; productRef = F724EAD422FC774E0008E10B /* SPMUtility */; };
+		F724EAD722FC77640008E10B /* transplanter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724EAD622FC77640008E10B /* transplanter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		F724EAC922FC77240008E10B /* outlineTransplanter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = outlineTransplanter; sourceTree = BUILT_PRODUCTS_DIR; };
 		F724EACC22FC77240008E10B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F724EAD622FC77640008E10B /* transplanter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transplanter.swift; sourceTree = "<group>"; };
+		F724EAD822FC77810008E10B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F724EAD522FC774E0008E10B /* SPMUtility in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +46,7 @@
 		F724EAC022FC77240008E10B = {
 			isa = PBXGroup;
 			children = (
+				F724EAD822FC77810008E10B /* README.md */,
 				F724EACB22FC77240008E10B /* outlineTransplanter */,
 				F724EACA22FC77240008E10B /* Products */,
 			);
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F724EACC22FC77240008E10B /* main.swift */,
+				F724EAD622FC77640008E10B /* transplanter.swift */,
 			);
 			path = outlineTransplanter;
 			sourceTree = "<group>";
@@ -78,6 +85,9 @@
 			dependencies = (
 			);
 			name = outlineTransplanter;
+			packageProductDependencies = (
+				F724EAD422FC774E0008E10B /* SPMUtility */,
+			);
 			productName = outlineTransplanter;
 			productReference = F724EAC922FC77240008E10B /* outlineTransplanter */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F724EAC022FC77240008E10B;
+			packageReferences = (
+				F724EAD322FC774E0008E10B /* XCRemoteSwiftPackageReference "swift-package-manager" */,
+			);
 			productRefGroup = F724EACA22FC77240008E10B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F724EACD22FC77240008E10B /* main.swift in Sources */,
+				F724EAD722FC77640008E10B /* transplanter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +294,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F724EAD322FC774E0008E10B /* XCRemoteSwiftPackageReference "swift-package-manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-package-manager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F724EAD422FC774E0008E10B /* SPMUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F724EAD322FC774E0008E10B /* XCRemoteSwiftPackageReference "swift-package-manager" */;
+			productName = SPMUtility;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F724EAC122FC77240008E10B /* Project object */;
 }
