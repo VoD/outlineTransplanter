@@ -1,5 +1,7 @@
 #  Outline Transplanter
 
+Build by Xcode 11 beta (swift 5.0)
+
 ~~~ shell script
 $ ./outlineTransplanter --help
 OVERVIEW: copy outline data of a PDF to anoter PDF.
